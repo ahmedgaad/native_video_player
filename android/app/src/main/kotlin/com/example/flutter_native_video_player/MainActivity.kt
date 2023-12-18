@@ -9,6 +9,6 @@ class MainActivity : FlutterActivity() {
         flutterEngine
             .platformViewsController
             .registry
-            .registerViewFactory(viewType, NativeViewFactory())
+            .registerViewFactory(viewType, NativeViewFactory(this))
     }
 }
